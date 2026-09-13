@@ -1,0 +1,6 @@
+# Tema integrato in GitHub Pages: tipografia da documento, nessuna barra laterale
+# e nessun pulsante "scarica lo zip". Per un'informativa e' quello che serve.
+theme: jekyll-theme-primer
+title: SegnaBaby
+description: Informativa privacy
+lang: it-IT
