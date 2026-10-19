@@ -2,13 +2,9 @@
 title: Informativa privacy — SegnaBaby
 ---
 
-<!-- ATTENZIONE: finche' questo file contiene segnaposto fra <parentesi angolari>
-     non e' pubblicabile. Cercali tutti prima di fare push. Cancellare il riquadro
-     qui sotto e' l'ultimo passo, non il primo. -->
-
 # Informativa privacy di SegnaBaby
 
-*Versione del `13/09/2026`.*
+*Versione del `19/10/2026`.*
 
 ## 1. Chi tratta i tuoi dati
 
@@ -30,18 +26,28 @@ Solo quello che serve a far funzionare il diario.
   `chat_id`). Non raccolgo il tuo nome, il tuo numero di telefono, il tuo
   `@username`, la tua email né il tuo indirizzo IP;
 - gli **eventi che registri**: sonno, pappa e cambio del pannolino, con l'ora di
-  inizio e, dove ha senso, di fine.
+  inizio e, dove ha senso, di fine;
+- i **dettagli di un evento**: i millilitri di una poppata col biberon, il **lato
+  del seno** in un allattamento, se il pannolino era con **pipì o cacca**. Con i
+  pulsanti il bot li chiede ogni volta, prima di registrare la pappa o il cambio;
+- il **nome del bambino**, che il bot chiede alla prima configurazione e usa nei
+  messaggi e nei fascicoli. Puoi cambiarlo quando vuoi con `/nome`;
+- la **data di nascita**, che il bot chiede alla prima configurazione: serve a
+  contare i mesi di vita nei fascicoli e negli auguri. Puoi cambiarla con
+  `/nascita`.
 
 **Solo se li scrivi tu**, e il bot funziona anche senza:
 
-- il **nome del bambino**. È facoltativo: se non rispondi alla domanda, o se scegli
-  «preferisco non dirlo», il bot lo chiama «Bimbo» e non te lo chiede più;
-- la **data di nascita**, che serve solo a contare i mesi di vita nei fascicoli;
-- i **dettagli di un evento**: i millilitri di una poppata col biberon, il **lato
-  del seno** in un allattamento, se il pannolino era con **pipì o cacca**;
 - il **codice di licenza** che riscatti con `/riscatta`, con il `chat_id` in cui
   l'hai usato e la data. Serve a garantire che un codice valga una volta sola e a
-  sapere fino a quando dura la licenza.
+  sapere fino a quando dura la licenza;
+- se usi gli **inviti**: quale chat ha invitato quale, il codice invito della tua
+  chat e il codice sconto creato per te. Serve a dare lo sconto a chi è invitato e i
+  giorni di licenza a chi invita. Nessuna delle due chat vede i dati dell'altra: chi
+  ha invitato riceve solo un messaggio che dice che una famiglia invitata ha comprato.
+- la **risposta alla domanda di fine prova**, se tocchi uno dei motivi: una voce da
+  un elenco chiuso, mai testo libero. Serve a capire perché chi prova il bot non
+  continua.
 
 Il testo dei tuoi messaggi non diventa un evento. Il bot risponde ai tre pulsanti e
 ai comandi, e nella conversazione normale del gruppo resta muto.
@@ -79,6 +85,10 @@ Chi tratta i dati per conto mio, ciascuno solo per la parte tecnica che gli spet
 | Backblaze | le copie di sicurezza cifrate |
 | Healthchecks.io | soltanto un segnale periodico che dice «il bot è vivo»; nessun dato tuo |
 
+**Il negozio dove si compra la licenza non riceve dati dal bot.** Quando sei invitato,
+il bot gli chiede di creare il tuo codice sconto: una stringa casuale, senza il tuo
+nome, il nome del bambino né il codice della chat.
+
 **Telegram è un caso a parte, e va detto per quello che è.** Tutti i messaggi fra te
 e il bot passano dai server di Telegram. Telegram è un titolare autonomo, ha una
 propria informativa e opera fuori dall'Unione Europea. Non è una scelta tecnica che
@@ -86,11 +96,12 @@ io possa cambiare: il bot *è* un bot Telegram. Se questo non ti sta bene, non p
 usare il servizio.
 
 **Io, come operatore, posso accedere ai dati** per assistenza e manutenzione. Oggi
-questo comporta due cose concrete:
+questo comporta tre cose concrete:
 
 - quando una nuova famiglia finisce la configurazione ricevo una notifica con
-  l'identificativo della chat, il nome del bambino se l'hai scritto e la data di
-  nascita se l'hai indicata;
+  l'identificativo della chat, il nome del bambino e la data di nascita;
+- quando rispondi alla domanda di fine prova ricevo il motivo scelto, con la stessa
+  riga: l'identificativo della chat, il nome del bambino e la data di nascita;
 - se mi chiedi aiuto, posso leggere, correggere o cancellare i dati della tua chat.
 
 Non cedo, non vendo e non condivido i tuoi dati con nessuno. Dentro il bot non ci
