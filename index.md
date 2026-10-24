@@ -4,7 +4,7 @@ title: Informativa privacy — SegnaBaby
 
 # Informativa privacy di SegnaBaby
 
-*Versione del `19/10/2026`.*
+*Versione del `24/10/2026`.*
 
 ## 1. Chi tratta i tuoi dati
 
@@ -23,8 +23,8 @@ Solo quello che serve a far funzionare il diario.
 **Sempre**, perché senza non c'è il servizio:
 
 - l'**identificativo numerico della chat** Telegram di gruppo in cui usi il bot (il
-  `chat_id`). Non raccolgo il tuo nome, il tuo numero di telefono, il tuo
-  `@username`, la tua email né il tuo indirizzo IP;
+  `chat_id`). Non raccolgo il tuo numero di telefono, il tuo `@username`, la tua
+  email né il tuo indirizzo IP;
 - gli **eventi che registri**: sonno, pappa e cambio del pannolino, con l'ora di
   inizio e, dove ha senso, di fine;
 - i **dettagli di un evento**: i millilitri di una poppata col biberon, il **lato
@@ -34,7 +34,11 @@ Solo quello che serve a far funzionare il diario.
   messaggi e nei fascicoli. Puoi cambiarlo quando vuoi con `/nome`;
 - la **data di nascita**, che il bot chiede alla prima configurazione: serve a
   contare i mesi di vita nei fascicoli e negli auguri. Puoi cambiarla con
-  `/nascita`.
+  `/nascita`;
+- il **nome del tuo profilo Telegram**, quando registri un evento con i pulsanti:
+  Telegram lo manda insieme al tocco, e il bot lo salva accanto all'evento. Serve
+  solo a sapere quante persone tengono il diario in una famiglia, nelle statistiche
+  del §3: il bot non lo mostra e non lo usa per contattarti.
 
 **Solo se li scrivi tu**, e il bot funziona anche senza:
 
@@ -49,6 +53,12 @@ Solo quello che serve a far funzionare il diario.
   un elenco chiuso, mai testo libero. Serve a capire perché chi prova il bot non
   continua.
 
+**Se arrivi da un link di un canale**, per esempio quello di un post su Instagram,
+il bot salva il nome del canale (come `ig`) sulla riga del tuo gruppo: serve a
+capire quali canali portano famiglie, nelle statistiche del §3. Conto anche quante
+volte al giorno il bot viene avviato da ciascun canale: è un numero, senza nessun
+dato su chi l'ha avviato.
+
 Il testo dei tuoi messaggi non diventa un evento. Il bot risponde ai tre pulsanti e
 ai comandi, e nella conversazione normale del gruppo resta muto.
 
@@ -60,6 +70,11 @@ ai comandi, e nella conversazione normale del gruppo resta muto.
   Lo dai usando quelle funzioni, e lo ritiri quando vuoi: smetti di usarle, oppure
   cancelli tutto con `/cancellami`.
 - Per **gestire la licenza** e risponderti se mi scrivi.
+- Per **statistiche aggregate** sull'uso del bot: da quale canale arrivano le
+  famiglie, quante continuano dopo la prova, quanto si usa il diario e quante
+  persone segnano in una famiglia. Guardo solo totali su molte famiglie, mai una
+  famiglia alla volta, e servono a decidere come migliorare il bot. Per i dati
+  sulla salute vale lo stesso consenso del punto sopra.
 
 Non c'è nessun altro scopo. Non uso i tuoi dati per profilarti, né per decisioni
 automatizzate che ti riguardano.
@@ -99,12 +114,15 @@ usare il servizio.
 questo comporta tre cose concrete:
 
 - quando una nuova famiglia finisce la configurazione ricevo una notifica con
-  l'identificativo della chat, il nome del bambino e la data di nascita;
+  l'identificativo della chat, il nome del bambino, la data di nascita e il canale
+  da cui è arrivata, se c'è;
+- quando riscatti un codice ricevo la stessa riga, con la nuova scadenza della
+  licenza;
 - quando rispondi alla domanda di fine prova ricevo il motivo scelto, con la stessa
-  riga: l'identificativo della chat, il nome del bambino e la data di nascita;
+  riga;
 - se mi chiedi aiuto, posso leggere, correggere o cancellare i dati della tua chat.
 
-Non cedo, non vendo e non condivido i tuoi dati con nessuno. Dentro il bot non ci
+Non cedo, non vendo e non condivido i tuoi dati privati con nessuno. Dentro il bot non ci
 sono inserzionisti né strumenti di analisi.
 
 ## 6. Per quanto tempo li conservo
